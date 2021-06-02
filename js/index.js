@@ -149,3 +149,10 @@ const tyrionLannister = new Asesor(
     daenerysTargaryen
 );
 const bronn = new Escudero("Bronn", "Bronn", 28, jaimeLannister);
+const mensajesLuchadores = (personajes) =>
+    personajes
+    .filter((personaje) => personaje instanceof Luchador)
+    .reduce(
+        (acumulador, personaje) => [...acumulador, personaje.comunicar()], []
+    );
+const mensajes = mensajesLuchadores(personajes);
