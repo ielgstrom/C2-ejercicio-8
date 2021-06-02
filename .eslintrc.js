@@ -7,6 +7,7 @@ module.exports = {
   parserOptions: {
     ecmaVersion: 12,
   },
+  parser: "babel-eslint",
   rules: {
     "no-shadow": "off",
     "no-console": "off",
